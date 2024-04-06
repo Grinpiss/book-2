@@ -1,26 +1,30 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
 
-// Таск для компиляции Sass в CSS
-gulp.task('sass', function() {
-  return gulp.src("app/scss/*.scss") // Исходные файлы Sass
-      .pipe(sass()) // Компилируем Sass в CSS
-      .pipe(gulp.dest("app/css")) // Сохраняем скомпилированный CSS
-      .pipe(browserSync.stream()); // Обновляем страницу при изменении CSS
-});
+
 
 // Таск для отслеживания изменений в файлах Sass
-gulp.task('watch', function() {
+ function bs() {
   // Инициализируем BrowserSync
   browserSync.init({
     server: {
-      baseDir: "./app" // Папка, которую мы хотим сервером
+      baseDir: "./" // Папка, которую мы хотим сервером
     }
   });
-
-  // Отслеживаем изменения в файлах Sass и вызываем таск для их компиляции
-  gulp.watch("app/scss/*.scss", gulp.series('sass'));
-  // Перезагружаем страницу при изменении HTML файлов
-  gulp.watch("app/*.html").on('change', browserSync.reload);
-});
+  watch("*./*.html*").on('change', browserSync.reload);
+  watch("./sass/**/*.sass", serveSass);
+  watch("*./js/*js").on('change', browserSync.reload);
+};
+  // Таск для компиляции Sass в CSS
+ function serveSass() {
+  return src("./sass/*.sass") // Исходные файлы Sass
+      .pipe(sass()) // Компилируем Sass в CSS
+      .pipe(gulp.dest("./css")) // Сохраняем скомпилированный CSS
+      .pipe(browserSync.stream()); // Обновляем страницу при изменении CSS
+};
+exports.serve = bs;
+  
+  
+  
+  
