@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "interface.css",
+	"sources": [
+		"../sass/interface.sass"
+	],
+	"sourcesContent": [
+		".button {\n  padding: 13px 20px;\n  border: {} }\n"
+	],
+	"names": [],
+	"mappings": ";;AAAA,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,SAAS;CACN"
+}

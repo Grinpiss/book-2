@@ -1,3 +1,28 @@
+.container {
+  max-width: 1256px;
+  border: 1px solid red;
+}
+.header {
+  background-color: black;
+}
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color:yellow;
+  text-transform: uppercase;
+}
+.nav {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-right: 60px;
+}
+.phone{
+  color: yellow;
+}
   
 /*# sourceMappingURL=style.css.map */
