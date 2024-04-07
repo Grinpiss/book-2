@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* line 1, ../../../Desktop/ПРограмирование скриншоты IT/book-2/sass/templates/hero.sass */
+.hero {
+  background: url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: white;
+}
+
+/*# sourceMappingURL=hero.css.map */

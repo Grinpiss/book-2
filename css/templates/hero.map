@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "hero.css",
+	"sources": [
+		"../../sass/templates/hero.sass"
+	],
+	"sourcesContent": [
+		".hero {\n  background: url('../img/hero-bg.jpg') no-repeat center / cover;\n  height: 100vh;\n  color: white; }\n"
+	],
+	"names": [],
+	"mappings": ";;AAAA,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,yBAAyB,CAAC,SAAS,CAAC,YAAc;EAC9D,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CAAG"
+}

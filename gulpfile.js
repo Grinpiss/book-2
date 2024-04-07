@@ -14,11 +14,12 @@ const sass = require('gulp-sass');
   });
   watch("*./*.html*").on('change', browserSync.reload);
   watch("./sass/**/*.sass", serveSass);
+  watch("./sass/**/*.scss", serveSass);
   watch("*./js/*js").on('change', browserSync.reload);
 };
   // Таск для компиляции Sass в CSS
  function serveSass() {
-  return src("./sass/*.sass") // Исходные файлы Sass
+  return src("./sass/**/*.sass", "./sass/**/*scss") // Исходные файлы Sass
       .pipe(sass()) // Компилируем Sass в CSS
       .pipe(gulp.dest("./css")) // Сохраняем скомпилированный CSS
       .pipe(browserSync.stream()); // Обновляем страницу при изменении CSS
