@@ -1,0 +1,26 @@
+.header {
+  background-color: black;
+  padding: 24px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: yellow;
+  text-transform: uppercase;
+}
+
+.nav_item {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+.phone {
+  color: yellow;
+}

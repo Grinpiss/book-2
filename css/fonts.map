@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "fonts.css",
+	"sources": [
+		"../sass/fonts.scss"
+	],
+	"sourcesContent": [
+		"@font-face {\r\n  font-family: 'Futura Book';\r\n  src: \r\n  url('../fonts/futura/FuturaBookC.woff') format('woff'),\r\n  url('../fonts/futura/FuturaBookC.woff') format('woff2');\r\n  font-weight: normal;\r\n  font-style: normal;\r\n  font-display: wrap;\r\n  }"
+	],
+	"names": [],
+	"mappings": "AAAA,UAAU;EACR,WAAW,EAAE,aAAa;EAC1B,GAAG,EACH,uCAAuC,CAAC,cAAc,EACtD,uCAAuC,CAAC,eAAe;EACvD,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,IAAI"
+}
