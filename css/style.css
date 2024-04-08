@@ -33,10 +33,24 @@
   color: green
 }
 .hero {
+  display: flex;
+  
+  justify-content: center;
+  align-items:flex-start;
   background: url("../img/hero-bg.jpg") no-repeat center / cover;
   height: 100vh;
   color: white;
 }
-.text {
-  text-align:  center;
+.text{
+  font-size: 33px;
+  max-width: 1000px;
+}
+.title {
+  margin: 0;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.title_primary{
+color:orange;
 }
