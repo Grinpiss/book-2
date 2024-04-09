@@ -1,6 +1,8 @@
 .header {
   background-color: black;
   padding: 24px 0;
+  padding-left: 20px; /* Отступ слева */
+            padding-right: 20px; /* Отступ справа */
 }
 
 .menu {
@@ -30,26 +32,40 @@
   border-radius: 2px;
   text-transform: uppercase;
   background-color: yellow;
-  color: green
+ 
+
+}
+.button--outline{
+  color:antiquewhite;
+  background-color:black;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.button--primary{
+margin-top: 20px;
+margin-right: 20px;
+background-color:orangered;
+color: antiquewhite;
 }
 .hero {
   display: flex;
   
   justify-content: center;
   align-items:flex-start;
-  background: url("../img/hero-bg.jpg") no-repeat center / cover;
+  background: url("../img/hero.jpg") no-repeat center / cover;
   height: 100vh;
   color: white;
 }
+
 .text{
-  font-size: 33px;
+  font-size: 40px;
   max-width: 1000px;
 }
 .title {
-  margin: 0;
+  margin: 20;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
 }
 .title_primary{
 color:orange;
